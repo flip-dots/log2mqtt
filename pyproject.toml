@@ -1,0 +1,40 @@
+[project]
+name = "log2mqtt"
+version = "0.1.0"
+description = "Pipe standard input to an MQTT server"
+authors = [
+    { name = "Harvey Lelliott", email="harveylelliott@duck.com" }
+]
+license = {file = "LICENSE.txt"}
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "paho-mqtt (>=2.1.0,<3.0.0)"
+]
+keywords = ["log", "logging", "mqtt"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Topic :: Utilities",
+    "Topic :: Terminals",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Microsoft :: Windows :: Windows 10",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: MacOS :: MacOS X",
+    "Programming Language :: Python :: 3.10"
+]
+
+[tool.poetry.group.test.dependencies]
+pytest = "^6.0.0"
+
+[project.scripts]
+log2mqtt-cli = "log2mqtt:main"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[project.urls]
+Homepage = "https://github.com/flip-dots/log2mqtt"
+Repository = "https://github.com/flip-dots/log2mqtt"
+Issues = "https://github.com/flip-dots/log2mqtt/issues"
