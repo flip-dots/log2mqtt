@@ -4,7 +4,7 @@ Simple Python program to publish standard input to an MQTT server on a desired t
 
 ## Installation
 
-The program can be installed using PIP.
+The program is [available on PyPI](https://pypi.org/project/log2mqtt/).
 
 ```bash
 pip install log2mqtt
